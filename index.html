@@ -15,6 +15,7 @@
 
         #app {
             margin: 20px;
+            display: inline-flex;
         }
 
         body {
@@ -32,11 +33,23 @@
             --border-color-hover: #666;
         }
     </style>
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+        }
+    </style>
 </head>
 <body>
 <div id="app">
-    <g-button></g-button>
+    <g-button icon="settings" icon-position="right">
+        按钮
+    </g-button>
+    <g-button icon="settings" icon-position="left1">
+        按钮
+    </g-button>
 </div>
 <script src="./src/app.js"></script>
+<script src="//at.alicdn.com/t/font_727645_tvbaxxspzhq.js"></script>
 </body>
 </html>
