@@ -39,13 +39,10 @@
 </head>
 <body>
 <div id="app">
-    <g-button icon="settings" icon-position="right">
+    <g-button icon="settings" :loading="loading1" @btn-click="loading1=!loading1" icon-position="right">
         按钮
     </g-button>
-    <g-button icon="settings" icon-position="left">
-        按钮
-    </g-button>
-    <g-button icon="loading" icon-position="left">
+    <g-button icon="settings" :loading="loading2" icon-position="left" @btn-click="loading2=!loading2">
         按钮
     </g-button>
 </div>
