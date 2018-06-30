@@ -36,7 +36,7 @@
     }
 
     .g-button {
-        display: flex;
+        display: inline-flex;
         vertical-align: middle;
         align-items: center;
         justify-content: center;

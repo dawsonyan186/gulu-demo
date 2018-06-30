@@ -15,7 +15,6 @@
 
         #app {
             margin: 20px;
-            display: inline-flex;
         }
 
         body {
@@ -45,8 +44,19 @@
     <g-button icon="settings" :loading="loading2" icon-position="left" @btn-click="loading2=!loading2">
         按钮
     </g-button>
+    <g-button-group>
+        <g-button icon="left" :loading="loading1" @btn-click="loading1=!loading1" icon-position="left">
+            上一页
+        </g-button>
+        <g-button>
+            更多
+        </g-button>
+        <g-button icon="right" :loading="loading2" @btn-click="loading2=!loading2" icon-position="right">
+            下一页
+        </g-button>
+    </g-button-group>
 </div>
 <script src="./src/app.js"></script>
-<script src="//at.alicdn.com/t/font_727645_x9gpaf65zsg.js"></script>
+<script src="//at.alicdn.com/t/font_727645_hauuvr0h5w.js"></script>
 </body>
 </html>
