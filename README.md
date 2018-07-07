@@ -1,6 +1,5 @@
 # gulu-demo
-
-https://travis-ci.org/dawsonyan186/gulu-demo.svg?branch=master
+[![Build Status](https://travis-ci.org/dawsonyan186/gulu-demo.svg?branch=master)](https://travis-ci.org/dawsonyan186/gulu-demo)
 
 ## 介绍
 
