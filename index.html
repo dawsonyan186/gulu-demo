@@ -31,6 +31,10 @@
             --border-color: #999;
             --border-color-hover: #666;
         }
+
+        .box {
+            margin: 20px;
+        }
     </style>
     <style>
 
@@ -38,7 +42,7 @@
 </head>
 <body>
 <div id="app">
-    <g-button icon="settings" :loading="loading1" @btn-click="loading1=!loading1" icon-position="right">
+    <!--<g-button icon="settings" :loading="loading1" @btn-click="loading1=!loading1" icon-position="right">
         按钮
     </g-button>
     <g-button icon="settings" :loading="loading2" icon-position="left" @btn-click="loading2=!loading2">
@@ -54,9 +58,22 @@
         <g-button icon="right" :loading="loading2" @btn-click="loading2=!loading2" icon-position="right">
             下一页
         </g-button>
-    </g-button-group>
+    </g-button-group>-->
+    <div class="box">
+        <g-input readonly></g-input>
+    </div>
+    <div class="box">
+        <g-input disabled></g-input>
+    </div>
+    <div class="box">
+        <g-input></g-input>
+    </div>
+    <div class="box">
+        <g-input error="不能為空" @change="inputChange"
+                 @input="input" @focus="inputFocus" @blur="inputBlur"></g-input>
+    </div>
 </div>
 <script src="./src/app.js"></script>
-<script src="//at.alicdn.com/t/font_727645_hauuvr0h5w.js"></script>
+<script src="//at.alicdn.com/t/font_727645_53sipzb7lc7.js"></script>
 </body>
 </html>
